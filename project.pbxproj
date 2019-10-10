@@ -10,7 +10,7 @@
 		7D1FB084234F056200CF5D4F /* iODecoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1FB07A234F056100CF5D4F /* iODecoder.framework */; };
 		7D1FB089234F056200CF5D4F /* iODecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1FB088234F056200CF5D4F /* iODecoderTests.swift */; };
 		7D1FB08B234F056200CF5D4F /* iODecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D1FB07D234F056100CF5D4F /* iODecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D1FB096234F05DC00CF5D4F /* ClS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1FB095234F05DC00CF5D4F /* ClS.swift */; };
+		7D1FB096234F05DC00CF5D4F /* ClSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1FB095234F05DC00CF5D4F /* ClSApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 		7D1FB083234F056200CF5D4F /* iODecoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iODecoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1FB088234F056200CF5D4F /* iODecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iODecoderTests.swift; sourceTree = "<group>"; };
 		7D1FB08A234F056200CF5D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D1FB095234F05DC00CF5D4F /* ClS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClS.swift; sourceTree = "<group>"; };
+		7D1FB095234F05DC00CF5D4F /* ClSApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClSApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 		7D1FB094234F05CD00CF5D4F /* ClS */ = {
 			isa = PBXGroup;
 			children = (
-				7D1FB095234F05DC00CF5D4F /* ClS.swift */,
+				7D1FB095234F05DC00CF5D4F /* ClSApi.swift */,
 			);
 			path = ClS;
 			sourceTree = "<group>";
@@ -207,7 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D1FB096234F05DC00CF5D4F /* ClS.swift in Sources */,
+				7D1FB096234F05DC00CF5D4F /* ClSApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
