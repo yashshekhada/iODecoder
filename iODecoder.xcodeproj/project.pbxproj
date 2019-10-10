@@ -10,6 +10,7 @@
 		7D1FB084234F056200CF5D4F /* iODecoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1FB07A234F056100CF5D4F /* iODecoder.framework */; };
 		7D1FB089234F056200CF5D4F /* iODecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1FB088234F056200CF5D4F /* iODecoderTests.swift */; };
 		7D1FB08B234F056200CF5D4F /* iODecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D1FB07D234F056100CF5D4F /* iODecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D1FB096234F05DC00CF5D4F /* ClS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1FB095234F05DC00CF5D4F /* ClS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		7D1FB083234F056200CF5D4F /* iODecoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iODecoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1FB088234F056200CF5D4F /* iODecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iODecoderTests.swift; sourceTree = "<group>"; };
 		7D1FB08A234F056200CF5D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D1FB095234F05DC00CF5D4F /* ClS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		7D1FB07C234F056100CF5D4F /* iODecoder */ = {
 			isa = PBXGroup;
 			children = (
+				7D1FB094234F05CD00CF5D4F /* ClS */,
 				7D1FB07D234F056100CF5D4F /* iODecoder.h */,
 				7D1FB07E234F056100CF5D4F /* Info.plist */,
 			);
@@ -84,6 +87,14 @@
 				7D1FB08A234F056200CF5D4F /* Info.plist */,
 			);
 			path = iODecoderTests;
+			sourceTree = "<group>";
+		};
+		7D1FB094234F05CD00CF5D4F /* ClS */ = {
+			isa = PBXGroup;
+			children = (
+				7D1FB095234F05DC00CF5D4F /* ClS.swift */,
+			);
+			path = ClS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				TargetAttributes = {
 					7D1FB079234F056100CF5D4F = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					7D1FB082234F056200CF5D4F = {
 						CreatedOnToolsVersion = 11.0;
@@ -195,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D1FB096234F05DC00CF5D4F /* ClS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +353,7 @@
 		7D1FB08F234F056200CF5D4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -347,6 +361,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = iODecoder/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JdeviO.iODecoder;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +379,7 @@
 		7D1FB090234F056200CF5D4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -370,6 +387,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = iODecoder/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,6 +404,8 @@
 		7D1FB092234F056200CF5D4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iODecoderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +423,8 @@
 		7D1FB093234F056200CF5D4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iODecoderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
