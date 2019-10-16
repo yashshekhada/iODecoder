@@ -16,3 +16,10 @@ Installetion setup
 3>pod 'iODecoder' (Ctrl + X) > Press Y
 4>pod install
 
+## Contributors
+
+[//]: contributor-faces
+
+<a href="https://github.com/krunal545"><img src="https://avatars3.githubusercontent.com/u/42804541?s=400&v=4" title="Krinal Nagvadia" width="80" height="80"></a>
+
+[//]: contributor-faces
