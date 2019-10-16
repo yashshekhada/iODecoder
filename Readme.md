@@ -13,7 +13,8 @@ Installetion setup
 
 1>pod init
 2>nano podfile
-3>pod 'iODecoder' (Ctrl + X) > Press Y
+3>pod 'iODecoder' 
+(Ctrl + X) > Press Y
 4>pod install
 
 ## Contributors
