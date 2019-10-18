@@ -7,10 +7,10 @@
 //
 
 import Foundation
-class ClSApi {
+class iODecoder : NSObject {
    
   
-    public static func GetJsonModelByString<T: Decodable>( completion: @escaping (T) -> (),BaseUrl: String,ApiName: String, Prams: String)
+    class func GetJsonModelByString<T: Decodable>( completion: @escaping (T) -> (),BaseUrl: String,ApiName: String, Prams: String)
     {
         let url = URL(string: BaseUrl+ApiName)!
                      var request = URLRequest(url: url)
@@ -43,7 +43,7 @@ class ClSApi {
  
     }
     
-    public static func GetJsonModelByDictionary<T: Decodable>( completion: @escaping (T) -> (),BaseUrl: String,ApiName: String, Prams: [String: Any]) {
+    class func GetJsonModelByDictionary<T: Decodable>( completion: @escaping (T) -> (),BaseUrl: String,ApiName: String, Prams: [String: Any]) {
 
           
 
